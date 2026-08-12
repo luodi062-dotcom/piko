@@ -11,7 +11,7 @@ piko-website/
 │   ├── logo.png            # App logo（导航 / Hero / 页脚）
 │   └── avatar.jpg          # 开发者头像（罗笛）
 ├── downloads/
-│   └── piko-v1.10.apk      # 最新安装包（v1.10）
+│   └── piko-v1.11.apk      # 最新安装包（v1.11）
 └── .github/workflows/pages.yml   # GitHub Pages 自动部署工作流
 ```
 
