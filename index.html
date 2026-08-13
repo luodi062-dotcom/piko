@@ -214,7 +214,7 @@
     <a class="btn btn-primary" href="#download">⬇ 下载 Android 版</a>
     <a class="btn btn-ghost" href="#features">了解功能</a>
   </div>
-  <div class="ver">当前版本 <b>v1.12</b> · Android 8.0+ · 免费</div>
+  <div class="ver">当前版本 <b>v1.13</b> · Android 8.0+ · 免费</div>
 </div>
 
 <!-- ===== FEATURES / STORY ===== -->
@@ -371,9 +371,9 @@
     </div>
     <div class="dl-card">
       <div class="info">
-        <h3>片羽 Piko v1.12 (Android)</h3>
+        <h3>片羽 Piko v1.13 (Android)</h3>
         <div class="meta">
-          <span>📦 约 940 KB</span>
+          <span>📦 约 1.2 MB</span>
           <span>🤖 Android 8.0+</span>
           <span>🔓 无需登录</span>
         </div>
@@ -384,7 +384,7 @@
         </ol>
         <div class="qr-note">提示：删除的照片会进入系统「最近删除」，可在相册回收站找回。</div>
       </div>
-      <a class="btn btn-primary" href="downloads/piko-v1.12.apk" download style="font-size:16px;padding:16px 30px">⬇ 下载 APK</a>
+      <a class="btn btn-primary" href="downloads/piko-v1.13.apk" download style="font-size:16px;padding:16px 30px">⬇ 下载 APK</a>
     </div>
   </div>
 </section>
@@ -426,7 +426,7 @@
       <form id="form-bug" class="fb-form">
         <div class="field"><label>你的称呼 / 联系方式（选填）</label><input name="contact" placeholder="邮箱或微信，方便我们回复你" /></div>
         <div class="field"><label>设备型号与系统版本</label><input name="device" placeholder="如 Pixel 6 / Android 14" /></div>
-        <div class="field"><label>App 版本</label><input name="ver" value="v1.12" /></div>
+        <div class="field"><label>App 版本</label><input name="ver" value="v1.13" /></div>
         <div class="field"><label>问题描述</label><textarea name="desc" placeholder="发生了什么？期望是什么？"></textarea></div>
         <div class="field"><label>复现步骤（选填）</label><textarea name="steps" placeholder="1. 打开… 2. 点击… 3. 出现…"></textarea></div>
         <div class="fb-note">提交后将为你生成一封邮件草稿（或投递到我们配置的表单服务）。</div>
@@ -490,7 +490,7 @@ function buildMail(to,subject,fields){
 
 async function handleSubmit(form, kind){
   const f = Object.fromEntries(new FormData(form).entries());
-  const subject = kind==='bug' ? "【片羽Piko Bug反馈】"+(f.ver||"v1.12") : "【片羽Piko 新需求】"+(f.title||"");
+  const subject = kind==='bug' ? "【片羽Piko Bug反馈】"+(f.ver||"v1.13") : "【片羽Piko 新需求】"+(f.title||"");
   if(DEV.endpoint){
     try{
       await fetch(DEV.endpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(f)});
